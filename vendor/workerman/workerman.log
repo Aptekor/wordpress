@@ -1,0 +1,40 @@
+2023-10-06 13:36:00 pid:1 Error: Call to a member function send() on null in E:\OSPanel\domains\worldpress\server\server.php:33
+Stack trace:
+#0 E:\OSPanel\domains\worldpress\server\server.php(44): tm()
+#1 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#2 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#3 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#4 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#5 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 E:\OSPanel\domains\worldpress\server\server.php(66): Workerman\Worker::runAll()
+#7 {main}
+2023-10-07 11:38:52 pid:1 Error: Call to a member function tm() on null in E:\OSPanel\domains\worldpress\server\server.php:42
+Stack trace:
+#0 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#1 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#2 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#3 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#4 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#5 E:\OSPanel\domains\worldpress\server\server.php(56): Workerman\Worker::runAll()
+#6 {main}
+2023-10-07 11:41:04 pid:1 Exception: You can't send(object) to client, you need to convert it to a string.  in E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Protocols\Websocket.php:243
+Stack trace:
+#0 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Connection\TcpConnection.php(329): Workerman\Protocols\Websocket::encode()
+#1 E:\OSPanel\domains\worldpress\server\server.php(41): Workerman\Connection\TcpConnection->send()
+#2 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Connection\TcpConnection.php(646): {closure}()
+#3 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Events\Select.php(311): Workerman\Connection\TcpConnection->baseRead()
+#4 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#5 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#6 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#7 E:\OSPanel\domains\worldpress\server\server.php(53): Workerman\Worker::runAll()
+#8 {main}
+2023-10-07 11:53:19 pid:1 ArgumentCountError: Too few arguments to function wc::tm(), 0 passed in E:\OSPanel\domains\worldpress\server\server.php on line 40 and exactly 1 expected in E:\OSPanel\domains\worldpress\server\server.php:11
+Stack trace:
+#0 E:\OSPanel\domains\worldpress\server\server.php(40): wc->tm()
+#1 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Worker.php(2576): {closure}()
+#2 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Events\Select.php(311): Workerman\Worker->acceptConnection()
+#3 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Worker.php(1485): Workerman\Events\Select->loop()
+#4 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Worker.php(1402): Workerman\Worker::forkWorkersForWindows()
+#5 E:\OSPanel\domains\worldpress\vendor\workerman\workerman\Worker.php(560): Workerman\Worker::forkWorkers()
+#6 E:\OSPanel\domains\worldpress\server\server.php(56): Workerman\Worker::runAll()
+#7 {main}

@@ -1,0 +1,23 @@
+        I. ReactPHP
+1. Установить ReactPHP с помощью composer:
+composer require react/event-loop
+
+2. Создать файл index.php и подключить Autoloader:
+require __DIR__ . '/vendor/autoload.php';
+
+3. Создать асинхронную функцию, которая будет являться обработчиком события:
+$loop = React\EventLoop\Factory::create();
+$loop->addTimer(1, function () {
+    echo "Hello, world!\n";
+});
+$loop->run();
+
+        II. GitHUB
+1. git init                                            - Инициализация репозитория
+2. git push origin                                     - Оправка комита в репозиторий
+3. git clone https://github.com/Aptekor/wordpress.git  - копирует репозиторий
+2. git add somefile.js                                 - Добавление отдельных файлов или всех файлов в область подготовленных файлов
+   or  git add . (добавление всех)
+3. git status                                          - Проверка статуса репозитория
+4. git commit -m "Your short summary about the commit" - Внесение изменений однострочным сообщением или через редактор
+5. git log -p                                          - Просмотр истории коммитов с изменениями

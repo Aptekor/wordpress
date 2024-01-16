@@ -1,0 +1,33 @@
+{
+    "name": "runtime/react",
+    "type": "library",
+    "description": "ReactPHP runtime",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Nyholm",
+            "email": "tobias.nyholm@gmail.com"
+        }
+    ],
+    "require": {
+        "psr/http-server-handler": "^1.0",
+        "react/http": "^1.2",
+        "symfony/runtime": "^5.3"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Runtime\\React\\": "src/",
+            "Symfony\\Runtime\\Psr\\Http\\": "runtime/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Runtime\\React\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
